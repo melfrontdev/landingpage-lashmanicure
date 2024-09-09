@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f76c6c; /* Cor sólida de fundo da página */
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Fundo do card */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 180px;
+    animation: slideIn 1s ease-in-out;
+}
+
+main {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffebcd; /* Cor de fundo do card principal */
+    padding: 30px; /* Aumentado para melhor espaçamento */
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+    color: #b69109; /* Cor dos ícones ao passar o mouse */
+    transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
